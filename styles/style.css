@@ -83,11 +83,6 @@
   right: 0;
 }
 
-.table__cell_theme_dark {
-  max-width: 200px;
-  color: white;
-}
-
 .description {
   padding: 100px 0 100px;
   display: flex;
@@ -137,8 +132,6 @@
 
 .digits {
   padding: 0 0 100px;
-  width: auto;
-  height: auto;
 }
 
 .section-title {
@@ -168,8 +161,7 @@
 }
 
 .table__cell {
-  margin: 60px 0 0;
-  padding: 0;
+  margin-top: 60px;
   width: 250px;
   list-style: none;
   z-index: 1;
@@ -180,14 +172,12 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
-  list-style: none;
 }
 
 .table__text {
   margin: 20px auto 0;
   line-height: 1.2;
   font-size: 18px;
-  list-style: none;
 }
 
 .feynman {
@@ -238,11 +228,13 @@
   overflow: hidden;
   background-color: #1f1f1f;
   color: #f2f2f2;
+  z-index: 1;
 }
 
-.table__cell_them_dark {
-  margin: 80px 0 0;
-  max-width: 200px;
+.table__cell_theme_dark {
+  margin-top: 80px;
+  width: 200px;
+  color: #ffff;
 }
 
 .kaufman__triangle {
@@ -254,7 +246,7 @@
   height: 877px;
   width: 877px;
   background-size: cover;
-  z-index: 0;
+  z-index: -1;
 }
 
 .footer {
@@ -273,15 +265,11 @@
   justify-content: space-between;
 }
 
-.footer__column {
+.footer__column_content_copyright {
+  flex-basis: 711px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-}
-
-.footer__column_content_copyright {
-  flex-basis: 711px;
 }
 
 .logo_place_footer {
@@ -308,7 +296,6 @@
   padding-left: 0;
   display: flex;
   flex-direction: column;
-  /*убрал justify-content: space-between; и не стал ставить justify-content: flex-start; т.к. это значение по умолчанию*/
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -316,6 +303,7 @@
 
 .footer__column-link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .footer__social-icon {
