@@ -7,6 +7,9 @@
     height: 877px;
     width: 877px;
     background-size: cover;
-    animation: rotation 20s infinite linear;
     z-index: -1;
+  }
+
+  .rotation {
+    animation: rotation 20s infinite linear;
   }
